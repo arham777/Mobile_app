@@ -22,4 +22,8 @@ void main(){
   final checkTime= DateTime.now();
   print(checkTime);
 
+  dynamic value= 1001.22;
+  print(value);
+
+
 }
