@@ -178,4 +178,81 @@
 // }
 
 
+// 4) Compare two map literals for equality. The first map contains: 'a' -> 1, 'b' -> 2. The 
+// second map contains the same key-value pairs but in a different order.
+
+// void main(){
+//   var Map1 = {'num1': 1 , 'num2': 2};
+//   var Map2 = {'num1': 2 , 'num2': 1};
+
+//   print(Map1 == Map2);
+// }
+
+
+// 5) Initialize an empty map literal and add the following key-value pairs: 
+// a) name' -> 'John' 
+// b) 'age' -> 25 
+// c) 'city' -> 'New York'
+
+  // void main(){
+  //   var newMap = {};
+  //   newMap['name'] = 'John';
+  //   newMap['age'] = 25;
+  //   newMap['city'] = 'New York';
+
+  //   print(newMap);
+
+  // }
+
+
+// 6) Use the from constructor to create a map from the given list of key-value pairs: 
+// ['one', 1], ['two', 2], ['three', 3]
+
+// void main() {
+//   var keyValuePairs = [
+//     ['one', 1],
+//     ['two', 2],
+//     ['three', 3]
+//   ];
+
+//   var map = Map.fromIterable(
+//     keyValuePairs, 
+//     key: (pair) => pair[0], 
+//     value: (pair) => pair[1] 
+//   );
+
+//   print(map);  
+// }
+
+
+// 7) Use the of constructor to create a map from the given list of key-value pairs: 
+// ['dog', 'bark'], ['cat', 'meow'], ['bird', 'tweet']
+
+// void main() {
+//   var map = Map.of({
+//     'dog': 'bark',
+//     'cat': 'meow',
+//     'bird': 'tweet',
+//   });
+
+//   print(map); 
+// }
+
+
+// 8) Create an unmodifiable map using the unmodifiable constructor with the following 
+// key-value pairs: 
+// a) 'January' -> 1 
+// b) 'February' -> 2 
+// c) 'March' -> 3
+
+// void main() {
+//   var unmodifiableMap = Map.unmodifiable({
+//     'January': 1,
+//     'February': 2,
+//     'March': 3,
+//   });
+
+//   print(unmodifiableMap); 
+// }
+
 
