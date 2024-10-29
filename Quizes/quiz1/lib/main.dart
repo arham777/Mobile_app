@@ -23,43 +23,44 @@ class MyApp extends StatelessWidget {
           //   ),
           //          ),
 
-              // child: TextField( 
-              //     decoration: InputDecoration(
-              //       hintText: 'Enter the amount',
-              //       hintStyle: TextStyle(
-              //         color: Colors.white,
-              //       ),
-              //       focusedBorder: OutlineInputBorder(
-              //         borderRadius: BorderRadius.all(Radius.circular(25)),
-              //         borderSide: BorderSide(color: Colors.white),
-              //       ),
-              //       enabledBorder: OutlineInputBorder(
-              //         borderRadius: BorderRadius.all(Radius.circular(25)),
-              //         borderSide: BorderSide(color: Color.fromARGB(255, 18, 253, 194)),
-              //       ),
-              //       // border: OutlineInputBorder(
-              //       //   borderRadius: BorderRadius.all(Radius.circular(25)),
-              //       //   borderSide: BorderSide(color: Colors.white),
-              //       // ),
-              //     ),
-              //   ),
               
-              // ),
+
+                 
+                 child: TextField( 
+                      decoration: InputDecoration(
+                        hintText: 'Enter the amount',
+                        hintStyle: TextStyle(
+                          color: Colors.white,
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(25)),
+                          borderSide: BorderSide(color: Colors.white),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(25)),
+                          borderSide: BorderSide(color: Color.fromARGB(255, 18, 253, 194)),
+                        ),
+                        // border: OutlineInputBorder(
+                        //   borderRadius: BorderRadius.all(Radius.circular(25)),
+                        //   borderSide: BorderSide(color: Colors.white),
+                        // ),
+                      ),
+                    ),
+              ),
             
-        //  ),
           
        ),
 
-          TextButton(onPressed: () { 
-          debugPrint( 'pressed');
+      //     TextButton(onPressed: () { 
+      //     debugPrint( 'pressed');
           
-        }, 
+      //   }, 
         
 
-       ),
+      //  ),
       
-    ),
     );
+    
 
   }
 
