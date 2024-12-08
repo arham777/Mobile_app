@@ -10,7 +10,11 @@ class CardApp extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const DetailApp()),
+                MaterialPageRoute(
+                  builder: (context) => const DetailApp(),
+              
+                ),
+                
               );
             },
             child: Card(

@@ -8,6 +8,10 @@ class DetailApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          title: Text('Detail App'),
+          backgroundColor: const Color.fromARGB(255, 184, 184, 184),
+        ),
         body: Column(
           children: [
             Image.asset('assets/images/h1.jpg',
