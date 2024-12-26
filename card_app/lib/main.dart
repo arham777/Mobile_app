@@ -70,29 +70,45 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Material App Bar'),
         ),
-        body: const SingleChildScrollView(
-          child:  Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Column(
-                children: [
-                  CardApp(),
-                  CardApp(),
-                  CardApp(),
-                 
-                ]
-              ),
-              Column(
-               children: [
-                 CardApp(),
-                  CardApp(),
-                  CardApp(),
-              ]
-            )
-          ]),
-        )
-              
+        body: Container(
+          height: 250,
+          child: GridView.count(
+            crossAxisCount: 2,
+            mainAxisSpacing: 11,
+            crossAxisSpacing: 11,
+            children: const [
+              CardApp(),
+              CardApp(),
+              CardApp(),
+              CardApp(),
+              CardApp(),
+            ],
+          ),
         ),
+        ),
+        // const SingleChildScrollView(
+        //   child:  Row(
+        //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //     children: [
+        //       Column(
+        //         children: [
+        //           CardApp(),
+        //           CardApp(),
+        //           CardApp(),
+                 
+        //         ]
+        //       ),
+        //       Column(
+        //        children: [
+        //          CardApp(),
+        //           CardApp(),
+        //           CardApp(),
+        //       ]
+        //     )
+        //   ]),
+        // )
+              
+        
     );
   }
 }

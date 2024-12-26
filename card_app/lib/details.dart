@@ -9,7 +9,7 @@ class DetailApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Detail App'),
+          title: const Text('Detail App'),
           backgroundColor: const Color.fromARGB(255, 184, 184, 184),
         ),
         body: Column(

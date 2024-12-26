@@ -1,4 +1,5 @@
 import 'package:card_app/details.dart';
+import 'package:card_app/themes/light_theme.dart';
 import 'package:flutter/material.dart';
 
 class CardApp extends StatelessWidget {
@@ -18,7 +19,7 @@ class CardApp extends StatelessWidget {
               );
             },
             child: Card(
-              color: const Color.fromARGB(255, 111, 185, 255),
+              color: const Color.fromARGB(255, 15, 15, 15),
               elevation: 20.0,
               margin: const EdgeInsets.all(10.0),
               child: SizedBox( // Restrict the size of the card
@@ -26,32 +27,36 @@ class CardApp extends StatelessWidget {
                 height: 250, // Fixed height
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  child: ListView(
                     children: [
                       Image.asset(
-                        'assets/images/h1.jpg',
+                         'assets/images/h1.jpg',
                         width: double.infinity,
                         fit: BoxFit.cover,
                       ),
                       const SizedBox(height: 10),
-                      const Text(
+                       Text(
                         'Description of the picture',
-                        style: TextStyle(
-                          fontSize: 12, 
-                          fontWeight: FontWeight.bold),
+                        style: mTextStyle(),
+                        // TextStyle(
+                        //   fontSize: 12, 
+                        //   fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(height: 5),
-                      const Text('Price: 299',
-                        style: TextStyle(
-                          fontSize: 9,
-                          ),
+                       Text('Price: 299',
+                        style: infoStyle(),
+                        // TextStyle(
+                        //   fontSize: 9,
+                        //   ),
                           ),
                       const SizedBox(height: 3),
-                      const Text('Ratings: 5 stars',
-                      style: TextStyle(
-                        fontSize: 9,
+                       Text('Ratings: 5 stars',
+                      style: infoStyle().copyWith(
+                             
                       ),
+                      // TextStyle(
+                      //   fontSize: 9,
+                      // ),
                       ),
                     ],
                   ),

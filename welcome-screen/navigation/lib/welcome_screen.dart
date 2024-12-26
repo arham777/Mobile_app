@@ -6,7 +6,9 @@ import 'package:navigation/main.dart';
 class WelcomeScreen extends StatelessWidget {
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:931978336.
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:1545734832.
-  const WelcomeScreen({super.key});
+   WelcomeScreen({super.key});
+  var nameController = TextEditingController();
+
 
   @override
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:1319282762.
@@ -18,19 +20,42 @@ class WelcomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Text('Welcome'),
+          const Text('Welcome',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+            ),
+
+            TextField(
+              controller: nameController,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:296901053.
           ElevatedButton(
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all(Colors.blue),
+              
+            ),
             onPressed: () {
+              String name = nameController.text;
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const MyHomePage(
-                  title: 'Login'
+                MaterialPageRoute(builder: (context) =>  MyHomePage(
+                  // title: 'Login'
+                   name: name
                   ),
                   ),
               );
             },
-            child: const Text('Login'),
+            child: const Text('Login',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
           ),
 
         ],
