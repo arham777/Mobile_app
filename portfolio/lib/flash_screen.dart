@@ -28,6 +28,7 @@ class _FlashScreenState extends State<FlashScreen> {
   }
 
 
+  @override
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Color.fromARGB(255,80, 165, 145),

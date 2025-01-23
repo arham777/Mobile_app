@@ -4,7 +4,7 @@ class SkillBar extends StatefulWidget {
   final String skillName;
   final int percentage;
 
-  SkillBar({ super.key ,required this.skillName, required this.percentage});
+  const SkillBar({ super.key ,required this.skillName, required this.percentage});
 
   @override
   State<SkillBar> createState() => _SkillBarState();
@@ -23,6 +23,7 @@ class _SkillBarState extends State<SkillBar> {
     });
   }
 
+  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),

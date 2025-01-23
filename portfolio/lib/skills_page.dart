@@ -21,12 +21,12 @@ class SkillsPage extends StatelessWidget {
             );
 
           },
-        child: Padding(
-          padding: const EdgeInsets.only(left: 10.0, top: 10.0),
-          child: Column(
+        child: const Padding(
+          padding:  EdgeInsets.only(left: 10.0, top: 10.0),
+          child:  Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text('Skills',
+               Text('Skills',
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,

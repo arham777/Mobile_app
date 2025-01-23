@@ -57,33 +57,33 @@ class EducationPage extends StatelessWidget {
 
               Center(
                 child: TextButton(onPressed: (){},
-                child: Text('Check Resume',
-                ),
                 style: ButtonStyle(
-                  foregroundColor: MaterialStatePropertyAll(Colors.grey),
-                  textStyle: MaterialStatePropertyAll(
-                    const TextStyle(
+                  foregroundColor: const WidgetStatePropertyAll(Colors.grey),
+                  textStyle: const WidgetStatePropertyAll(
+                     TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
               
 
-                side: MaterialStateProperty.all(
-                  BorderSide(color: Colors.black, width: 2),
+                side: WidgetStateProperty.all(
+                  const BorderSide(color: Colors.black, width: 2),
                 ),
 
 
-                shape: MaterialStateProperty.all(
-                  RoundedRectangleBorder(
+                shape: WidgetStateProperty.all(
+                  const RoundedRectangleBorder(
                     borderRadius: BorderRadius.zero,
                   ),
                 ),
 
-                padding: MaterialStateProperty.all(
-                  EdgeInsets.symmetric(horizontal: 50, vertical: 16)
+                padding: WidgetStateProperty.all(
+                  const EdgeInsets.symmetric(horizontal: 50, vertical: 16)
                 ),
                   
+                ),
+                child: const Text('Check Resume',
                 ),
                 
                 ),
